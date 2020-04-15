@@ -1,6 +1,6 @@
 {
-"versionCode":1,                          //新版本的versionCode,int型
-"versionName":"1",                     //新版本的versionName,String型
+"versionCode":2,                          //新版本的versionCode,int型
+"versionName":"2",                     //新版本的versionName,String型
 "url":"http://baidu.com",       //APK下载地址,String型
 "note":"test",                         //更新内容,String型
 //"md5":"D23788B6A1F95C8B6F7E442D6CA7536C", //32位MD5值,String型
