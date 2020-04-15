@@ -1,0 +1,7 @@
+{
+  "versionCode":1,
+  "versionName":"1.0.0",
+  "content":"1.test#2.test",//使用 # 来进行换行
+  "minSupport":1,	//最低支持版本，小于此版本必须强制更新
+  "url":"apk download url"
+}
