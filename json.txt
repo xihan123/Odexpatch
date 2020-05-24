@@ -2,8 +2,7 @@
   "update": "Yes",
   "new_version": "2.1",
   "apk_file_url": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/app-release.apk",
-  "update_log": "1. 测试更新。\r\n2. \r\n3 .\r\n4 .\r\n5. ",
+  "update_log": "1. 测试更新。\r\n2.更新文件放在github，网络不好请不要使用此下载 \r\n3 .\r\n4 .\r\n5. ",
   "target_size": "1.5M",
-  "new_md5":"b97bea014531123f94c3ba7b7afbaad2",
   "constraint": false
 }
