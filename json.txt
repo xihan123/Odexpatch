@@ -1,9 +1,9 @@
 {
   "update": "Yes",
   "new_version": "2.1",
-  "apk_file_url": "https://raw.githubusercontent.com/WVector/AppUpdateDemo/master/apk/sample-debug.apk",
-  "update_log": "1，更新。\r\n2，\r\n3，\r\n4，\r\n5，",
+  "apk_file_url": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/app-release.apk",
+  "update_log": "1. 测试更新。\r\n2. \r\n3 .\r\n4 .\r\n5. ",
   "target_size": "1.5M",
   "new_md5":"b97bea014531123f94c3ba7b7afbaad2",
-  "constraint": true
+  "constraint": false
 }
