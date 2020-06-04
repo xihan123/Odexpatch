@@ -1,1 +1,1 @@
-{"code":"2.0","update":"http://hnzldzkj.cn/static/apks/version.txt"}  
+{"code":"2.0","update":"最新版本apk的地址","nr":"1.测试更新"}
