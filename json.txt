@@ -3,6 +3,6 @@
   "new_version": "2.2",
   "apk_file_url": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/app-release.apk",
   "update_log": "1. 测试更新。\r\n2.更新文件放在Github，网络不好请不要使用此更新 \r\n3 .修复hook\r\n4 .添加hook\r\n5. ",
-  "target_size": "1.9M",
+  "target_size": "1.72M",
   "constraint": false
 }
