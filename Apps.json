@@ -1,8 +1,8 @@
 {
 
 
-"AppName": "Odex修补",                          //新版本的versionCode,int型
-"versionName":"4",                     //新版本的versionName,String型  //APK下载地址,String型
+"AppName": "Odex修补",                          
+"versionName":"4",                    
 "AppDownloadUrl":"https://raw.githubusercontent.com/xihan123/Odexpatch/master/2.5.apk", 
   
 
