@@ -32,20 +32,26 @@
 		"AppVersion": "9.3.4.4(9344)",
 		"UpdateTime": "2020-09-20",
 		"icon": "http://cdn-img.easyicon.net/png/11184/1118405.gif"
-		"function":"1.解锁Vip"
+		"function":"1.解锁VIP 2.解锁全音效 3.解锁全皮肤"
 	},
 	{
 		"AppName": "酷狗音乐",
 		"AppVersion": "10.2.7(10279)",
 		"UpdateTime": "2020-09-20",
 		"icon": "http://cdn-img.easyicon.net/png/11184/1118405.gif"
-		"function":"1.解锁Vip"
+		"function":"1.解锁本地SVIP 2.解锁全皮肤 3.解锁全音效 4.去启动广告"
 	},
 	{
 		"AppName": "优酷",
 		"AppVersion": "9.3.0(241)",
 		"UpdateTime": "2020-09-20",
 		"icon": "http://cdn-img.easyicon.net/png/11184/1118405.gif"
-		"function":"1.解锁Vip"
+		"function":"1.去播放广告 2.去其他广告(可能)"
+	},
+	{
+		"title": "网络部",
+        "date": "2017",
+        "counnt": "16",
+        "pic":"http://cdn-img.easyicon.net/png/11184/1118405.gif"
 	}
 ]
