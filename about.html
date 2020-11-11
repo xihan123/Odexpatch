@@ -1,0 +1,158 @@
+
+
+<html lang="zh">
+	<head>
+		<title>关于</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,viewport-fit=cover">
+		<script>
+		  var dpr,rem;
+		  var docEl=document.documentElement;
+		  rem=docEl.clientWidth/10;
+		  docEl.setAttribute('data-dpr',1);
+		  docEl.setAttribute('style','font-size:'+rem+'px');
+		</script>
+        <style type="text/css">
+        body {
+            margin: 0;
+            background: #fff;
+            font-family: Helvetica, Arial, PingFangSC-Regular, Microsoft Yahei, sans-serif;
+            font-size: 0.35rem;
+            line-height: 140%;
+            color: #333;
+            -webkit-text-size-adjust: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {text-decoration: none;color:#333;}
+		.about-content {
+            width: 80%;
+            overflow:hidden;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            right: 10%;
+		}
+        .about-content p {
+            margin-top: 0;
+            letter-spacing: 0.03rem;
+            line-height: .6rem;
+            margin-bottom: .7rem;
+            font-size: .3rem;
+        }
+        .btn {
+            text-decoration: none;
+            display: block;
+            border-radius: .1rem;
+            color: #fff;
+            padding: .2rem .6rem;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .version-content {
+            width: 80%;
+            padding-top: 20%;
+            margin: 0 auto;
+        }
+        .app {
+            text-align: center;
+        }
+        .applogo {width: 2rem;height: 2rem; border-radius: .125rem;margin: 0 auto;overflow: hidden;}
+        .applogo img {width: 100%;}
+        .list ul{
+            padding-left: 0;
+            margin-top: 1.25rem;
+        }
+        .list ul li {
+            list-style-type: none;
+            height: 1.25rem;
+            line-height: 1.25rem;
+            border-bottom: 1px solid #EFEFEF;
+            background: url('https://p.pstatp.com/origin/ff6500033585a38aecaa') no-repeat right center;
+            background-size: .5rem;
+        }
+        .list ul li:first-child {
+            border-top: 1px solid #EFEFEF;
+        }
+        .list ul li.new .newversion{
+            display: inline;
+        }
+        .list ul li a {
+            display: block;
+        }
+        .newversion{
+            display: none;
+            font-size: 85%;background-color: red;padding:.1rem .125rem;color: #FFF;border-radius: .1rem;
+            margin-left: .5rem;
+        }
+        </style>
+        <script>
+            function version() {
+                return (window.app && window.app.version()) ? window.app.version() : '1.0.0';
+            }
+
+            const versionStringCompare = (preVersion='', lastVersion='') => {
+                var sources = preVersion.split('.');
+                var dests = lastVersion.split('.');
+                var maxL = Math.max(sources.length, dests.length);
+                var result = 0;
+                for (let i = 0; i < maxL; i++) {  
+                    let preValue = sources.length>i ? sources[i]:0;
+                    let preNum = isNaN(Number(preValue)) ? preValue.charCodeAt() : Number(preValue);
+                    let lastValue = dests.length>i ? dests[i]:0;
+                    let lastNum =  isNaN(Number(lastValue)) ? lastValue.charCodeAt() : Number(lastValue);
+                    if (preNum < lastNum) {
+                        result = -1;
+                        break;
+                    } else if (preNum > lastNum) { 
+                        result = 1;
+                        break;
+                    }
+                }
+                return result;
+            }
+
+            function openUrl(url) {
+                return window.adskip && window.adskip.skip(url);
+            }
+        </script>
+	</head>
+	<body>
+        <div class="version-content">
+            <div class="app">
+                <div class="applogo"><img referrerpolicy="no-referrer" src="https://p.pstatp.com/origin/13843000115ffe11c0c01" /></div>
+                <h4>Version: <script>document.writeln(version())</script></h4>
+				<h4>自 用 追 番</h4>
+            </div>
+            <div class="list">
+                <ul>
+                    <li id="appnotice">版本更新<span class="newversion">有新版本</span></li>
+                    <!--<li><a href="update.html">更新日志</a></li>-->
+                    <li><a href="intro.html">AGE动漫介绍</a></li>
+                    <li><a href="javascript:openUrl('https://www.agefans.tv')">官方网站</a></li>
+                </ul>
+            </div>
+        </div>
+		<div class="about-content">
+			<p>提示：如果 app 打开显示空白，请右上角「清除缓存」或者「卸载应用」到官方网站重新下载安装！</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+        <script>
+            axios.get('https://spa-1259460662.cos.accelerate.myqcloud.com/agefans/api/age.json').then(function (response) {
+                if (!response) return;
+                if (response.data && response.data.appversion)
+                {
+                    if (versionStringCompare(version(), response.data.appversion) != -1) return;
+                   
+                    document.getElementById('appnotice').className = "new";
+                    document.getElementById('appnotice').onclick = function(){
+                        window.adskip.skip('https://www.agefans.app');
+                    }
+                }
+            }).catch(function (error) {
+                
+            });   
+        </script>
+	</body>
+</html>
