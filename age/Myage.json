@@ -1,0 +1,50 @@
+{
+    "launch": {
+        "pic": [
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/1.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/2.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/3.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/4.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/5.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/6.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/7.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/8.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/9.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/10.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/11.png",
+            "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/12.png"
+
+        ],
+        "url": ""
+    },
+    "appversion": "1.0.3",
+    "url": "https://web.age-spa.com:8443/#/",
+    "about": "https://xihan.rthe.net/about.html",
+    "nav": [
+        {
+            "title": "首页",
+            "icon": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/index.png",
+            "url": "https://web.age-spa.com:8443/#/"
+        },
+        {
+            "title": "目录",
+            "icon": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/catalog.png",
+            "url": "https://web.age-spa.com:8443/#/catalog"
+        },
+        {
+            "title": "推荐",
+            "icon": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/recommend.png",
+            "url": "https://web.age-spa.com:8443/#/recommend"
+        },
+        {
+            "title": "更新",
+            "icon": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/update.png",
+            "url": "https://web.age-spa.com:8443/#/update"
+        },
+        {
+            "title": "排行榜",
+            "icon": "https://raw.githubusercontent.com/xihan123/Odexpatch/master/splash/rank.png",
+            "url": "https://web.age-spa.com:8443/#/rank"
+        }
+    ]
+}
